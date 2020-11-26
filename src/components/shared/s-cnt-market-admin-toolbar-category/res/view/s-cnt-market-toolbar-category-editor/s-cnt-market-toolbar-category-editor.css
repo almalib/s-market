@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.category-editor-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  color: #24282c;
+}
+
+.category-editor-header {
+  background-color: #eef1f3;
+  border-bottom: 1px solid #cdd4db;
+  padding: 10px 15px 0 15px;
+}
+
+.category-editor-header-title{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.categories-preview{
+  display: inline-block;
+  font-size: 13.5px;
+  line-height: 35px;
+  margin-bottom: 8px;
+  color: #068eef;
+  transition: color .1s linear;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.categories-preview:hover{
+  color: #0463a7;
+}
+
+.tabs-btn-wrapper{
+  display: flex;
+  text-align: center;
+  line-height: 25px;
+}
+
+.tabs-btn{
+  margin-right: 16px;
+  cursor: pointer;
+  transition: color .1s linear;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 17px;
+  padding-bottom: 8px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.tabs-btn-wrapper .selected-tab{
+  border-bottom: 3px solid #068eef;
+  color: #068eef;
+}
+
+.selected-tab{
+
+}
+
+.category-editor{
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+.category-editor-header-title{
+  font-size: 18px;
+}
+
+  .categories-preview{
+    font-size: 12px;
+  }
+
+  .tabs-btn{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 576px) {
+
+}

@@ -1,0 +1,234 @@
+.a-card {
+  position: relative;
+  box-sizing: border-box;
+  margin: 20px -15px 16px -15px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.08) inset;
+  transition: box-shadow 0.2s linear, border-color 0.2s linear,
+    background-color 0.2s linear;
+}
+
+.sidebar {
+  margin: 0 -15px 0 0;
+}
+
+.productSidebar-priceBlock-title {
+  margin-bottom: 7px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product-sidebar-price-block {
+  font-size: 24px;
+  color: #24282c;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 0 20px 20px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  overflow: hidden;
+}
+
+.productSidebar-priceField {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+}
+
+.form-area__content,
+.price-value {
+  margin-right: 10px;
+}
+
+.form-area__content input {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  border: 1px solid #b6c1cc;
+  outline: 0;
+  background-color: #f9fafb;
+  color: #24282c;
+  text-align: left;
+  vertical-align: middle;
+  transition: color 0.1s linear, background-color 0.1s linear,
+    border-color 0.1s linear, box-shadow 0.1s linear;
+  cursor: text;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07) inset;
+  height: 40px;
+  padding: 2px 9px 3px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form-area__content input:hover {
+  background-color: #ffffff;
+}
+
+.iconDropdown i {
+  font-size: 18px;
+  color: #068eef;
+  cursor: pointer;
+}
+
+.premium-feature-block {
+  display: flex;
+  /*justify-content: ;*/
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.premium-feature-block:hover .premium-icon i {
+  color: #ae7438;
+}
+
+.premium-feature-block:hover .premium-text {
+  color: #0463a7;
+}
+
+.premium-icon i {
+  font-size: 18px;
+  color: #f9a650;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.premium-text {
+  font-size: 14px;
+  color: #068eef;
+  transition: 0.3s ease;
+}
+
+.productSidebar-availBlock {
+  margin-top: 20px;
+}
+
+.enabled {
+  font-size: 12px;
+  font-weight: bold;
+  color: #37ba32;
+}
+
+.disabled {
+  color: red;
+  font-size: 12px;
+}
+
+.link {
+  color: #068eef;
+  cursor: pointer;
+}
+
+.productSidebar-enabled .link {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.availBlock-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #53575a;
+  margin-bottom: 5px;
+}
+
+.item-availBlock {
+  margin-bottom: 10px;
+}
+
+.availBlock-inStock-icon {
+  margin-left: 10px;
+}
+
+.productSidebar-enabled {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productSidebar-availBlock {
+  margin: 20px -20px;
+  padding: 0px 20px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.check-preview,
+.open-in-shop {
+  color: #068eef;
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.productSidebar-promote i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #adcbe6;
+}
+
+.product-sidebar__premium-features {
+  transition: 0.3s ease;
+  transform: translateY(70px);
+  height: 0px;
+  margin-top: 10px;
+}
+
+.opened.product-sidebar__premium-features {
+  transform: translateY(0px);
+  height: 56px;
+}
+
+.opened.inStock-change {
+  height: 30px;
+  transform: translateY(0px);
+}
+
+.inStock-change {
+  height: 0px;
+  margin-top: 10px;
+  /*margin-bottom: 20px;*/
+  overflow: hidden;
+  transition: 0.3s ease;
+  transform: translateY(5px);
+}
+
+@media (max-width: 1200px) {
+  .enabled {
+    display: inline-block;
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .form-area__content {
+    width: 50%;
+  }
+
+  .productSidebar-enabled {
+    justify-content: flex-start;
+  }
+  .enabled {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 414px) {
+  .product-heading {
+    flex-direction: column;
+  }
+  .gallery-items {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .gallery .gallery-item {
+    width: 100px;
+    height: 100px;
+  }
+}

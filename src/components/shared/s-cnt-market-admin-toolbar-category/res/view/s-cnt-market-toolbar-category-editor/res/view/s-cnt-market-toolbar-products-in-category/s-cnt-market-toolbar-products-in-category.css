@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.products-in-category-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.default-btn {
+  color: #24282c;
+  min-width: 120px;
+  height: 40px;
+  background-color: white;
+  border-color: #d4d4d4;
+  border-radius: 6px;
+  border-width: 0;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 9px 12px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px #b6c1cc inset;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.default-btn[disabled] {
+  opacity: .35;
+  cursor: default;
+  pointer-events: none;
+}
+
+.primary-btn {
+  background-color: #068eef;
+  color: #fff;
+  background-image: linear-gradient(45deg, #0674db, #069cf9);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  border: 0 solid transparent;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.btn-small {
+  min-width: 84px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.products-in-category-footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.paging-bar-text {
+  font-size: 14px;
+  color: #24282c;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+
+.page-number-and-switching {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-page-switching, .back-page-switching{
+  min-width: 30px;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.15), 0 0 0 1px #b6c1cc inset;
+  outline: none;
+  margin: 0 7px;
+}
+
+.page-number{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  width: 40px;
+  height: 28px;
+  padding: 3px 6px;
+  border: 1px solid #b6c1cc;
+  border-radius: 5px;
+  background-color: #f9fafb;
+  color: #24282c;
+  transition: background-color .1s linear, color .1s linear;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.07) inset;
+}
+
+.paging-bar-text-number{
+  font-weight: bold;
+  color: #24282c;
+}
+
+.paging-bar-items-per-page-box{
+
+}
+
+.products-per-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

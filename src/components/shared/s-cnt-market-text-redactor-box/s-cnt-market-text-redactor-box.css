@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.text-redactor-box-wrap {
+  position: relative;
+  overflow: visible;
+  margin-bottom: 24px;
+  max-width: 686px;
+  width: 100%;
+  background: #fff;
+}
+
+.text-redactor-box-instruments {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1 !important;
+}
+
+.text-redactor-box-instrument {
+  list-style: none !important;
+  font-size: 12px !important;
+  display: inline-block;
+}
+
+.text-redactor-instrument-icon {
+  display: block;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  padding: 9px 8px !important;
+  transition: color .1s linear;
+  box-sizing: content-box;
+  line-height: 1;
+}
+
+.text-redactor-instrument-icon:hover {
+  outline: none;
+  background-color: #1f78d8;
+  color: #fff;
+}
+
+.text-redactor-box {
+  outline: none;
+  white-space: normal;
+  border: 1px solid #eee;
+  height: 208px;
+}
+
+.text-redactor-box textarea {
+  position: relative;
+  overflow: auto;
+  margin: 0 !important;
+  padding: 20px;
+  min-height: 80px;
+  outline: none;
+  white-space: normal;
+  border: 1px solid #eee0;
+  font-size: 14px;
+  line-height: 1.6em;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1250px) {
+  .text-redactor-box-instruments {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 992px) {
+  .text-redactor-box{
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 576px) {
+
+}

@@ -1,0 +1,14 @@
+.shipping-and-assembly-collapse-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+}
+
+.collapse-item-title {
+  margin-right: 20px;
+}
+
+.collapse-item-value {
+  align-content: flex-end;
+}

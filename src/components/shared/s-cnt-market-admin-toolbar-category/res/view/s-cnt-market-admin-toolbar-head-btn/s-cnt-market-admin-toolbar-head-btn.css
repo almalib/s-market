@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.toolbar-add-del-btn-category-wrapper {
+  display: flex;
+  margin-bottom: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.default-btn {
+  color: #24282c;
+  cursor: pointer;
+  min-width: 120px;
+  height: 40px;
+  background-color: white;
+  border-color: #d4d4d4;
+  border-radius: 6px;
+  border-width: 1px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 9px 12px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px #b6c1cc inset;
+  font-size: 14px;
+  line-height: 1.45;
+  transition: width 0.3s linear;
+}
+
+.default-btn[disabled] {
+  opacity: .35;
+  cursor: default;
+  pointer-events: none;
+}
+
+.category-primary-btn {
+  background-color: #068eef;
+  color: #fff;
+  background-image: linear-gradient(45deg, #0674db, #069cf9);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  border: 0 solid transparent;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.svg-icon {
+  display: inline-block;
+  box-sizing: border-box;
+  opacity: .8;
+  margin-top: -2px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.category-primary-btn .svg-icon {
+  fill: white;
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+  .toolbar-add-del-btn-category-wrapper button {
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar-add-del-btn-category-wrapper button {
+    font-size: 11px;
+    width: 50px;
+    min-width: 50px;
+  }
+
+  .toolbar-add-del-btn-category-wrapper button:hover {
+    width: 205px;
+  }
+
+  .toolbar-add-del-btn-category-wrapper button .toolbar-head-btn-text {
+    display: none;
+  }
+
+  .toolbar-add-del-btn-category-wrapper button .svg-icon {
+    margin: 0;
+  }
+
+  .toolbar-add-del-btn-category-wrapper button:hover .toolbar-head-btn-text {
+    display: block;
+  }
+
+  .toolbar-add-del-btn-category-wrapper button:hover .svg-icon {
+    margin-top: -2px;
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: 576px) {
+
+}

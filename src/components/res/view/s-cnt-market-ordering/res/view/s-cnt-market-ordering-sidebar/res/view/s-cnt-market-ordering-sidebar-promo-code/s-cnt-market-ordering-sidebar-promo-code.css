@@ -1,0 +1,47 @@
+.promo-code-item {
+  transition: all, 0.3s;
+  display: flex;
+  flex: 1 auto;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.promo-code-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+  height: 46px;
+  width: 63px;
+  border: 1px solid #f0efec;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.promo-code-item-img div {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 60px;
+  height: 38px;
+}
+
+.promo-code-item-info {
+  display: flex;
+  flex: 1 auto;
+  flex-direction: column;
+  padding: 5px 0;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.promo-code-item-name {
+  font-weight: 700;
+}
+
+.promo-code-item-link-add {
+  color: #21a038;
+}

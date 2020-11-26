@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.indent {
+  padding: 20px;
+}
+
+.home-page-text-editor-wrap {
+  max-width: 678px;
+  width: 100%;
+}
+
+.home-page-text-editor-title {
+  padding: 4px;
+  background: #eef1f3;
+  font-size: 16px;
+  white-space: nowrap;
+  color: #24282c;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+.home-page-text-editor-title{
+  font-size: 12px;
+}
+}
+
+@media (max-width: 768px) {
+}
+
+@media (min-width: 576px) {
+
+}
